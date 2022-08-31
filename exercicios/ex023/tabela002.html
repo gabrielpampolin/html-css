@@ -14,6 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -32,6 +33,26 @@
             background-color: #383838;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+    /*  tbody > tr:nth-child(even) {
+            background-color: white;
+            color: black;
+        }*/
+
+         /*'2n' = De 2 em 2 ele faz a mudança.*/
+
+        /* No lugar do 2n se usar 'odd' ele vai mudar so os itens impares, ou 'even' que é par.*/
 
         .num {
             text-align: right;
