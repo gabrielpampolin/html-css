@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,7 +14,8 @@
     <header>
         <h1>Meu Site</h1>
 
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -38,5 +40,15 @@
             Facilis magni commodi ratione ab, voluptatibus, assumenda nesciunt quidem, placeat dolore dolores facere? Ex voluptatem, a dicta sit delectus consectetur id vitae nulla iure, dolore iusto eaque pariatur voluptatum doloribus!</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = "none"
+            } else {
+                itens.style.display = "block"
+            }
+        }
+    </script>
 </body>
 </html>
